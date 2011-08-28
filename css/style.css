@@ -52,6 +52,80 @@ table {
 }
 
 /*---------------------------------------------------------------------------*\
+    TYPE 
+\*---------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+  font-weight: bold;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4, h5, h6 {
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 27px;
+}
+
+a {
+  color: #00e;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #77f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active, a:focus {
+  position: relative;
+  top: 1px;
+}
+
+ul, ol {
+  margin: 0 0 30px 20px;
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  line-height: 1.5em;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+} 
+
+/*---------------------------------------------------------------------------*\
     MAIN 
 \*---------------------------------------------------------------------------*/
 html {
@@ -91,75 +165,58 @@ ul#links a {
   color: #00e;
 }
 
+.post h1 {
+  margin-bottom: 10px;
+}
+
+#date {
+  font-size: 16px;
+  font-style: italic;
+}
+
 /*---------------------------------------------------------------------------*\
-    TYPE 
+    HEADER 
 \*---------------------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-  font-weight: bold;
-  line-height: 27px;
-  margin-bottom: 30px;
+#header {
+  position: fixed;
+  width: 100%;
+  background-color: #191919;
+  line-height: 40px;
 }
 
-h1 {
-  font-size: 28px;
+#header div {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
 }
 
-h2 {
+#title {
   font-size: 24px;
+  letter-spacing: 1px;
 }
 
-h3 {
-  font-size: 22px;
+#title span {
+  font-weight: bold;
 }
 
-p {
-  line-height: 1.5em;
-  margin-bottom: 27px;
+#nav {
+  position: absolute;
+  top: 2px;
+  right: 5px;
 }
 
-a {
-  color: #00e;
-  text-decoration: none;
+#nav li {
+  display: inline;
 }
 
-a:visited {
-  color: #77f;
-}
-
-a:hover {
+#nav a:hover {
   text-decoration: underline;
 }
 
-a:active, a:focus {
-  position: relative;
-  top: 1px;
+a.navigation, .separator {
+  color: #fff;
+  text-decoration: none;
 }
-
-ul, ol {
-  margin: 0 0 30px 20px;
-  font-size: 1em;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-li {
-  line-height: 1.5em;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-i, em {
-  font-style: italic;
-} 
 
 /*---------------------------------------------------------------------------*\
     MISC 

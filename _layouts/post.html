@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
 
@@ -13,8 +13,13 @@
 </head>
 
 <body>
+  {% include header.html %}
   <div id="content">
-     {{ content }}
+     <div id="main" class="post">
+       <h1>{{ page.title }}</h1>
+       <p id="date">Entrada escrita el {{ page.date | date: "%d.%m.%y"}}<p>
+       {{ content }}
+     </div>
   </div>
   {% include analytics.html %}
 </body>
