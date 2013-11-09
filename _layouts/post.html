@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
   <title>{{ page.title }}</title>
   <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Edgar Henríquez">
 
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="/public/css/normalize.css">
+  <link rel="stylesheet" href="/public/css/main.css">
+  <script src="/public/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-
 <body>
-  {% include header.html %}
-  <div id="content">
-     <div id="main" class="post">
-       <h1>{{ page.title }}</h1>
-       <p id="date">Entrada escrita el {{ page.date | date: "%d.%m.%y"}}<p>
-       {{ content }}
-     </div>
-  </div>
-  {% include analytics.html %}
+  <h1>{{ page.title }}</h1>
+  <p>Written on {{ page.date | date: "%B %d, %Y" }}</p>
+  {{ content }}
+  {% include scripts.html %}
 </body>
 </html>
