@@ -12,136 +12,188 @@ __Note__: You can expect this document to be modified/updated frequently.
 
 ## First steps
 
-- Update the system
+Update the system
 
-        $ sudo softwareupdate -iav
+{% highlight bash %}
+$ sudo softwareupdate -iav
+{% endhighlight %}
 
-- Install the Command Line Tools
+Install the Command Line Tools
 
-        $ xcode-select --install
+{% highlight bash %}
+$ xcode-select --install
+{% endhighlight %}
 
-- Install [Homebrew](http://brew.sh/)
+Install [Homebrew](http://brew.sh/)
 
-        $ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-        $ brew update
+{% highlight bash %}
+$ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+$ brew update
+{% endhighlight %}
 
-- Open `/etc/paths` and move `/usr/local/bin` to the first line, then add `/usr/local/sbin` next.
+Open `/etc/paths` and move `/usr/local/bin` to the first line, then add `/usr/local/sbin` next.
 
-- Set Zsh as default shell
+Set Zsh as default shell
 
-        $ sudo mv /etc/{zshenv,zshrc}
-        $ chsh -s /bin/zsh
+{% highlight bash %}
+$ sudo mv /etc/{zshenv,zshrc}
+$ chsh -s /bin/zsh
+{% endhighlight %}
 
 
 ## Homebrew packages
 
-- Install Git
+Install Git
 
-        $ brew install git
+{% highlight bash %}
+$ brew install git
+{% endhighlight %}
 
-- Install PostgreSQL
+Install PostgreSQL
 
-        $ brew install postgres
-        $ initdb /usr/local/var/postgres -E utf8
-        $ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents # to have launchd start postgresql at login
-        $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist # to load postgresql now
+{% highlight bash %}
+$ brew install postgres
+$ initdb /usr/local/var/postgres -E utf8
+$ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents # to have launchd start postgresql at login
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist # to load postgresql now
+{% endhighlight %}
 
   If you receive an `'psql: FATAL:  database "<user>" does not exist'` when you execute `psql`, then do
 
-        $ createdb
+{% highlight bash %}
+$ createdb
+{% endhighlight %}
 
   Via [StackOverflow](http://stackoverflow.com/questions/17633422/psql-fatal-database-user-does-not-exist)
 
-- Install MongoDB
+Install MongoDB
 
-        $ brew install mongodb
-        $ ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents # to have launchd start mongodb at login
-        $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist # to load mongodb now
+{% highlight bash %}
+$ brew install mongodb
+$ ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents # to have launchd start mongodb at login
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist # to load mongodb now
+{% endhighlight %}
 
-- Install Redis
+Install Redis
 
-        $ brew install redis
-        $ ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents # to have launchd start redis at login
-        $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist # to load redis now
+{% highlight bash %}
+$ brew install redis
+$ ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents # to have launchd start redis at login
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist # to load redis now
+{% endhighlight %}
 
-- Install QT, needed by Capybara for headless Javascript integration testing
+Install QT, needed by Capybara for headless Javascript integration testing
 
-        $ brew install https://raw.github.com/cliffrowley/homebrew/patched_qt/Library/Formula/qt.rb --HEAD # the normal brew install qt didn't work at the time
+{% highlight bash %}
+$ brew install https://raw.github.com/cliffrowley/homebrew/patched_qt/Library/Formula/qt.rb --HEAD # the normal brew install qt didn't work at the time
+{% endhighlight %}
 
-- Install [Ag](https://github.com/ggreer/the_silver_searcher) (A faster `ack`)
+Install [Ag](https://github.com/ggreer/the_silver_searcher) (A much faster `ack`)
 
-        $ brew install the_silver_searcher
+{% highlight bash %}
+$ brew install the_silver_searcher
+{% endhighlight %}
 
-- Install OpenSSL
+Install OpenSSL
 
-        $ brew install openssl
+{% highlight bash %}
+$ brew install openssl
+{% endhighlight %}
 
-- Install vim
+Install vim
 
-        $ brew install vim
+{% highlight bash %}
+$ brew install vim
+{% endhighlight %}
 
-- Install Tmux
+Install Tmux
 
-        $ brew install tmux
+{% highlight bash %}
+$ brew install tmux
+{% endhighlight %}
 
-- Install [ImageMagick](http://www.imagemagick.org/script/index.php)
+Install [ImageMagick](http://www.imagemagick.org/script/index.php)
 
-        $ brew install imagemagick
+{% highlight bash %}
+$ brew install imagemagick
+{% endhighlight %}
 
-- Install the [Heroku Toolbelt](https://toolbelt.heroku.com)
+Install the [Heroku Toolbelt](https://toolbelt.heroku.com)
 
-        $ brew install heroku-toolbelt
+{% highlight bash %}
+$ brew install heroku-toolbelt
+{% endhighlight %}
 
-- Install the [heroku-accounts](https://github.com/ddollar/heroku-accounts) plugin to multiple accounts support
+Install the [heroku-accounts](https://github.com/ddollar/heroku-accounts) plugin to multiple accounts support
 
-        $ heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+{% highlight bash %}
+$ heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+{% endhighlight %}
 
 
 ## Ruby environment
 
-- Install [rbenv](https://github.com/sstephenson/rbenv), [ruby-build](https://github.com/sstephenson/ruby-build) and [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash)
+Install [rbenv](https://github.com/sstephenson/rbenv), [ruby-build](https://github.com/sstephenson/ruby-build) and [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash)
 
-        $ brew install rbenv ruby-build rbenv-gem-rehash
+{% highlight bash %}
+$ brew install rbenv ruby-build rbenv-gem-rehash
+{% endhighlight %}
 
-- Add `if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi` to your `.zshrc`
+Add `if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi` to your `.zshrc`
 
-- Install your favorite ruby version
+Install your favorite ruby version
 
-        $ rbenv install 2.0.0-p247
-        $ rbenv global 2.0.0-p247 # set as the default version to use
-        $ rbenv rehash # rebuild the shim executables
+{% highlight bash %}
+$ rbenv install 2.0.0-p247
+$ rbenv global 2.0.0-p247 # set as the default version to use
+$ rbenv rehash # rebuild the shim executables
+{% endhighlight %}
 
-- Update the local gem system
+Update the local gem system
 
-        $ gem update —-system
+{% highlight bash %}
+$ gem update —-system
+{% endhighlight %}
 
-- Install bundler
+Install bundler
 
-        $ gem install bundler --no-document
+{% highlight bash %}
+$ gem install bundler --no-document
+{% endhighlight %}
 
 
 ## Python environment
 
-- Install python
+Install python
 
-        $ brew install python --with-brewed-openssl
+{% highlight bash %}
+$ brew install python --with-brewed-openssl
+{% endhighlight %}
 
-- Add the following to your `.zshrc`
+Add the following to your `.zshrc`
 
-        export PATH=/usr/local/share/python:$PATH
+{% highlight bash %}
+export PATH=/usr/local/share/python:$PATH
+{% endhighlight %}
 
-- Update Setuptools and Pip
+Update Setuptools and Pip
 
-        $ pip install --upgrade setuptools
-        $ pip install --upgrade pip
+{% highlight bash %}
+$ pip install --upgrade setuptools
+$ pip install --upgrade pip
+{% endhighlight %}
 
-- Install [virtualenv](https://pypi.python.org/pypi/virtualenv) and [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper)
+Install [virtualenv](https://pypi.python.org/pypi/virtualenv) and [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper)
 
-        $ pip install virtualenv virtualenvwrapper
+{% highlight bash %}
+$ pip install virtualenv virtualenvwrapper
+{% endhighlight %}
 
-- Add `source /usr/local/bin/virtualenvwrapper.sh'` to your `.zshrc` and then reload zsh
+Add `source /usr/local/bin/virtualenvwrapper.sh` to your `.zshrc` and then reload zsh
 
-        $ source ~/.zshrc
+{% highlight bash %}
+$ source ~/.zshrc
+{% endhighlight %}
 
-  By default, virtualenv will create a `.virtualenv` directory in your $HOME.
+By default, virtualenv will create a `.virtualenv` directory in your $HOME.
 
