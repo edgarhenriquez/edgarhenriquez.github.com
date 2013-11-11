@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A practical guide to setup Mavericks as a development machine
+modified: 2013-11-10
 ---
 
 This document covers setting up a development machine after a clean install of
