@@ -4,6 +4,7 @@ pre {
   background-color: #fdf6e3;
   border: 1px solid #ddd;
   color: #657b83;
+  white-space: pre;
   overflow-y: hidden;
 }
 
