@@ -8,11 +8,15 @@ pre {
   overflow-y: hidden;
 }
 
+pre code {
+  font-size: 14px;
+}
+
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
 } 
 
-.highlight .c { color: #586E75 } /* Comment */
+.highlight .c { color: #999 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
 .highlight .g { color: #93A1A1 } /* Generic */
 .highlight .k { color: #859900 } /* Keyword */
