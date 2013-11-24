@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A practical guide to setup Mavericks as a development machine
-modified: 2013-11-10
+modified: 2013-11-24
 ---
 
 This document covers setting up a development machine after a clean install of
@@ -86,7 +86,7 @@ $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist # to load redi
 Install QT, needed by Capybara for headless Javascript integration testing
 
 {% highlight bash %}
-$ brew install https://raw.github.com/cliffrowley/homebrew/patched_qt/Library/Formula/qt.rb --HEAD # the normal brew install qt didn't work at the time
+$ brew install qt --HEAD
 {% endhighlight %}
 
 Install [Ag](https://github.com/ggreer/the_silver_searcher) (A much faster `ack`)
