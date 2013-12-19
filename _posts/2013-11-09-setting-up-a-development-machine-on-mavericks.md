@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A practical guide to setup Mavericks as a development machine
-modified: 2013-11-24
+modified: 2013-12-19
 ---
 
 This document covers setting up a development machine after a clean install of
@@ -12,6 +12,8 @@ could be useful for others too.
 __Note__: You can expect this document to be modified/updated frequently.
 
 ## First steps
+
+Enable FileVault Disk Encryption
 
 Update the system
 
