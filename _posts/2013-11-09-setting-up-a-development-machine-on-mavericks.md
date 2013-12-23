@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A practical guide to setup Mavericks as a development machine
-modified: 2013-12-19
+modified: 2013-12-23
 ---
 
 This document covers setting up a development machine after a clean install of
@@ -43,6 +43,11 @@ $ sudo mv /etc/{zshenv,zshrc}
 $ chsh -s /bin/zsh
 {% endhighlight %}
 
+Install [git-flow](https://github.com/nvie/gitflow)
+
+{% highlight bash %}
+$ brew install git-flow
+{% endhighlight %}
 
 ## Homebrew packages
 
