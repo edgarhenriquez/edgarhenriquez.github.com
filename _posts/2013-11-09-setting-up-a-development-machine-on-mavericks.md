@@ -43,12 +43,6 @@ $ sudo mv /etc/{zshenv,zshrc}
 $ chsh -s /bin/zsh
 {% endhighlight %}
 
-Install [git-flow](https://github.com/nvie/gitflow)
-
-{% highlight bash %}
-$ brew install git-flow
-{% endhighlight %}
-
 ## Homebrew packages
 
 Install Git
@@ -138,6 +132,11 @@ Install the [heroku-accounts](https://github.com/ddollar/heroku-accounts) plugin
 $ heroku plugins:install git://github.com/ddollar/heroku-accounts.git
 {% endhighlight %}
 
+Install [git-flow](https://github.com/nvie/gitflow)
+
+{% highlight bash %}
+$ brew install git-flow
+{% endhighlight %}
 
 ## Ruby environment
 
