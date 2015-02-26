@@ -2,4 +2,28 @@
   # The meat of this site's style.
 ---
 
+$site-bg-color: #fefefe;
+$max-body-width: 750px;
+
 @import "normalize";
+@import "typography";
+@import "home";
+
+html,
+body {
+  background-color: $site-bg-color;
+}
+
+body {
+  padding: 20px;
+
+  @media only screen
+  and (min-width: 768px) {
+    padding-top: 120px;
+  }
+}
+
+.wrapper {
+  max-width: $max-body-width;
+  margin: 0 auto;
+}

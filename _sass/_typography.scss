@@ -1,0 +1,26 @@
+/*
+  TYPOGRAPHY
+*/
+
+$site-headings-family: sans-serif;
+$site-headings-color: orange;
+
+$site-body-family: georgia, serif;
+$site-body-color: #222;
+
+html {
+  font-family: $site-body-family;
+  font-size: 24px;
+  line-height: 1.35;
+  color: $site-body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $site-headings-family;
+  color: $site-headings-color;
+}
