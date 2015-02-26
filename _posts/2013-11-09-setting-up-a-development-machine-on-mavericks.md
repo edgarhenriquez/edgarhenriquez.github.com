@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A practical guide to setup Mavericks as a development machine
+category: notes
 modified: 2013-12-23
 ---
 
