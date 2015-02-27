@@ -16,11 +16,9 @@ with a focus on Artificial Intelligence and Computer Graphics.
 Computers aside, I’m interested in books, minimalism, outdoor activities
 and photography.
 
-You can write me at [edgar@edgarhenriquez][email].
+You can write me at <edgar@edgarhenriquez>.
 
 
 ## WORK
 
 I’m available for consulting work.
-
-[email]: mailto:edgar@edgarhenriquez.com
