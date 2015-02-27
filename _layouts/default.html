@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt || strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="Edgar Henríquez">
-
 
     <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/public/css/main.css" | prepend: site.baseurl }}">
