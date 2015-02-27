@@ -1,0 +1,13 @@
+.home {
+  h1,
+  h2 {
+    font-size: 28px;
+    letter-spacing: 0.07em;
+    color: $font-color-base;
+
+    @media only screen
+    and (max-width: 480px) {
+      font-size: 19px;
+    }
+  }
+}

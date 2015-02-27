@@ -1,0 +1,46 @@
+---
+  # The meat of this site's style.
+---
+
+$site-bg-color: #fefefe;
+$max-body-width: 750px;
+
+@import "normalize";
+@import "typography";
+@import "home";
+
+html {
+  border-top: 20px solid #f7f6eb;
+
+  @media only screen
+  and (min-width: 768px) {
+    box-sizing: border-box;
+    min-height: 100%;
+    border: 20px solid #f7f6eb;
+  }
+}
+
+html,
+body {
+  background-color: $site-bg-color;
+}
+
+body {
+  padding: 20px;
+
+  @media only screen
+  and (min-width: 768px) {
+    padding-top: 120px;
+  }
+}
+
+.wrapper {
+  max-width: $max-body-width;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
