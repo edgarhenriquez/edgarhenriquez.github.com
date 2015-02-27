@@ -9,6 +9,17 @@ $max-body-width: 750px;
 @import "typography";
 @import "home";
 
+html {
+  border-top: 20px solid #f7f6eb;
+
+  @media only screen
+  and (min-width: 768px) {
+    box-sizing: border-box;
+    min-height: 100%;
+    border: 20px solid #f7f6eb;
+  }
+}
+
 html,
 body {
   background-color: $site-bg-color;
