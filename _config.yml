@@ -4,7 +4,7 @@ exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'Readme.md']
 title: Edgar Henríquez
 description: >
   Hi there. I’m a computer engineer who specializes in full stack
-  web development. I live in Panama City, Panama.
+  web development. I live in Miami and work at MDLIVE.
 baseurl: ""
 url: "http://www.edgarhenriquez.com"
 permalink: /:categories/:title/
