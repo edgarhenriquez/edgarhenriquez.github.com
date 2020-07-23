@@ -4,21 +4,12 @@ title: Edgar Henríquez
 custom_class: home
 ---
 
-# ABOUT
+Hi, my name is Edgar Henríquez.
 
-Hello there. My name is Edgar Henríquez. I’m a computer engineer
-who specializes in full stack web development. I live in Panama
-City, Panama.
+I'm a programmer from Venezuela, now living in Miami and working at MDLIVE.
 
-I have a degree in Computer Engineering from Universidad Simón Bolívar,
-with a focus on Artificial Intelligence and Computer Graphics.
+I got a Computer Engineering degree from Simón Bolívar University, with a focus on Artificial Intelligence and Computer Graphics.
 
-Computers aside, I’m interested in books, minimalism, outdoor activities
-and photography.
+Programming aside, I like reading, mountain biking, making photos, playing videogames, and visiting new places.
 
-You can write me at <edgar@edgarhenriquez>.
-
-
-## WORK
-
-I’m available for consulting work.
+You can write me at <edgar@edgarhenriquez.com>.
